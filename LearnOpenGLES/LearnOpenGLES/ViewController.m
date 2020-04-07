@@ -66,23 +66,18 @@
         1,2,3
     };
     
-    GLuint vao,vbo,ebo;
-//    glGenVertexArrays(1, &vao);
-//    glBindVertexArray(vao);
-    
-    glGenBuffers(1, &vbo);
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    GLuint vboIds[] = {};
+    glGenBuffers(2, vboIds);
+    glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertexs), vertexs, GL_STATIC_DRAW);
     
-    glGenBuffers(1, &ebo);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vboIds[1]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexs), indexs, GL_STATIC_DRAW);
     
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), 0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void *)(3 * sizeof(GLfloat)));
     glEnableVertexAttribArray(1);
-//    glBindVertexArray(0);
     
     UIImage * image  = [UIImage imageNamed:@"木箱"];
     GLuint textureId = [self getTextureId:image];
@@ -92,8 +87,6 @@
     glBindTexture(GL_TEXTURE_2D,textureId);
     
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-//    glBindVertexArray(0);
-
 }
 
 -(GLuint)getTextureId:(UIImage *)image
