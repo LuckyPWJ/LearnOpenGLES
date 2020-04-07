@@ -1,6 +1,6 @@
 //
-//  LearnOpenGLESUITests.m
-//  LearnOpenGLESUITests
+//  LearnOpenGLES______UITests.m
+//  LearnOpenGLES--绘制图形UITests
 //
 //  Created by LuckyPan on 2020/4/7.
 //  Copyright © 2020 潘伟建. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface LearnOpenGLESUITests : XCTestCase
+@interface LearnOpenGLES______UITests : XCTestCase
 
 @end
 
-@implementation LearnOpenGLESUITests
+@implementation LearnOpenGLES______UITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

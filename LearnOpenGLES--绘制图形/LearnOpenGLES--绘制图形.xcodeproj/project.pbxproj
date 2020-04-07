@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73C14EDD243CAD4D00968735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14EDC243CAD4D00968735 /* AppDelegate.m */; };
+		73C14EE0243CAD4D00968735 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14EDF243CAD4D00968735 /* SceneDelegate.m */; };
+		73C14EE3243CAD4D00968735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14EE2243CAD4D00968735 /* ViewController.m */; };
+		73C14EE6243CAD4D00968735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C14EE4243CAD4D00968735 /* Main.storyboard */; };
+		73C14EE8243CAD4F00968735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C14EE7243CAD4F00968735 /* Assets.xcassets */; };
+		73C14EEB243CAD4F00968735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C14EE9243CAD4F00968735 /* LaunchScreen.storyboard */; };
+		73C14EEE243CAD4F00968735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14EED243CAD4F00968735 /* main.m */; };
+		73C14EF8243CAD5000968735 /* LearnOpenGLES______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14EF7243CAD5000968735 /* LearnOpenGLES______Tests.m */; };
+		73C14F03243CAD5000968735 /* LearnOpenGLES______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F02243CAD5000968735 /* LearnOpenGLES______UITests.m */; };
+		73C14F13243CAD7200968735 /* PJLinkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F12243CAD7200968735 /* PJLinkHelper.m */; };
+		73C14F16243CB17300968735 /* TrangleVertext.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 73C14F14243CB13B00968735 /* TrangleVertext.glsl */; };
+		73C14F17243CB17600968735 /* TrangleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 73C14F15243CB15200968735 /* TrangleFragment.glsl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73C14EF4243CAD5000968735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73C14ED0243CAD4D00968735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73C14ED7243CAD4D00968735;
+			remoteInfo = "LearnOpenGLES--绘制图形";
+		};
+		73C14EFF243CAD5000968735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73C14ED0243CAD4D00968735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73C14ED7243CAD4D00968735;
+			remoteInfo = "LearnOpenGLES--绘制图形";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73C14ED8243CAD4D00968735 /* LearnOpenGLES--绘制图形.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearnOpenGLES--绘制图形.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C14EDB243CAD4D00968735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		73C14EDC243CAD4D00968735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		73C14EDE243CAD4D00968735 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		73C14EDF243CAD4D00968735 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		73C14EE1243CAD4D00968735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		73C14EE2243CAD4D00968735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		73C14EE5243CAD4D00968735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73C14EE7243CAD4F00968735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73C14EEA243CAD4F00968735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73C14EEC243CAD4F00968735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C14EED243CAD4F00968735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73C14EF3243CAD5000968735 /* LearnOpenGLES--绘制图形Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LearnOpenGLES--绘制图形Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C14EF7243CAD5000968735 /* LearnOpenGLES______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LearnOpenGLES______Tests.m"; sourceTree = "<group>"; };
+		73C14EF9243CAD5000968735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C14EFE243CAD5000968735 /* LearnOpenGLES--绘制图形UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LearnOpenGLES--绘制图形UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C14F02243CAD5000968735 /* LearnOpenGLES______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LearnOpenGLES______UITests.m"; sourceTree = "<group>"; };
+		73C14F04243CAD5000968735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C14F11243CAD7200968735 /* PJLinkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLinkHelper.h; sourceTree = "<group>"; };
+		73C14F12243CAD7200968735 /* PJLinkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJLinkHelper.m; sourceTree = "<group>"; };
+		73C14F14243CB13B00968735 /* TrangleVertext.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TrangleVertext.glsl; sourceTree = "<group>"; };
+		73C14F15243CB15200968735 /* TrangleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TrangleFragment.glsl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73C14ED5243CAD4D00968735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C14EF0243CAD5000968735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C14EFB243CAD5000968735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73C14ECF243CAD4D00968735 = {
+			isa = PBXGroup;
+			children = (
+				73C14EDA243CAD4D00968735 /* LearnOpenGLES--绘制图形 */,
+				73C14EF6243CAD5000968735 /* LearnOpenGLES--绘制图形Tests */,
+				73C14F01243CAD5000968735 /* LearnOpenGLES--绘制图形UITests */,
+				73C14ED9243CAD4D00968735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73C14ED9243CAD4D00968735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73C14ED8243CAD4D00968735 /* LearnOpenGLES--绘制图形.app */,
+				73C14EF3243CAD5000968735 /* LearnOpenGLES--绘制图形Tests.xctest */,
+				73C14EFE243CAD5000968735 /* LearnOpenGLES--绘制图形UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73C14EDA243CAD4D00968735 /* LearnOpenGLES--绘制图形 */ = {
+			isa = PBXGroup;
+			children = (
+				73C14F10243CAD7200968735 /* Util */,
+				73C14EDB243CAD4D00968735 /* AppDelegate.h */,
+				73C14EDC243CAD4D00968735 /* AppDelegate.m */,
+				73C14EDE243CAD4D00968735 /* SceneDelegate.h */,
+				73C14EDF243CAD4D00968735 /* SceneDelegate.m */,
+				73C14EE1243CAD4D00968735 /* ViewController.h */,
+				73C14EE2243CAD4D00968735 /* ViewController.m */,
+				73C14F14243CB13B00968735 /* TrangleVertext.glsl */,
+				73C14F15243CB15200968735 /* TrangleFragment.glsl */,
+				73C14EE4243CAD4D00968735 /* Main.storyboard */,
+				73C14EE7243CAD4F00968735 /* Assets.xcassets */,
+				73C14EE9243CAD4F00968735 /* LaunchScreen.storyboard */,
+				73C14EEC243CAD4F00968735 /* Info.plist */,
+				73C14EED243CAD4F00968735 /* main.m */,
+			);
+			path = "LearnOpenGLES--绘制图形";
+			sourceTree = "<group>";
+		};
+		73C14EF6243CAD5000968735 /* LearnOpenGLES--绘制图形Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73C14EF7243CAD5000968735 /* LearnOpenGLES______Tests.m */,
+				73C14EF9243CAD5000968735 /* Info.plist */,
+			);
+			path = "LearnOpenGLES--绘制图形Tests";
+			sourceTree = "<group>";
+		};
+		73C14F01243CAD5000968735 /* LearnOpenGLES--绘制图形UITests */ = {
+			isa = PBXGroup;
+			children = (
+				73C14F02243CAD5000968735 /* LearnOpenGLES______UITests.m */,
+				73C14F04243CAD5000968735 /* Info.plist */,
+			);
+			path = "LearnOpenGLES--绘制图形UITests";
+			sourceTree = "<group>";
+		};
+		73C14F10243CAD7200968735 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				73C14F11243CAD7200968735 /* PJLinkHelper.h */,
+				73C14F12243CAD7200968735 /* PJLinkHelper.m */,
+			);
+			name = Util;
+			path = ../../LearnOpenGLES/LearnOpenGLES/Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73C14ED7243CAD4D00968735 /* LearnOpenGLES--绘制图形 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73C14F07243CAD5000968735 /* Build configuration list for PBXNativeTarget "LearnOpenGLES--绘制图形" */;
+			buildPhases = (
+				73C14ED4243CAD4D00968735 /* Sources */,
+				73C14ED5243CAD4D00968735 /* Frameworks */,
+				73C14ED6243CAD4D00968735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LearnOpenGLES--绘制图形";
+			productName = "LearnOpenGLES--绘制图形";
+			productReference = 73C14ED8243CAD4D00968735 /* LearnOpenGLES--绘制图形.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73C14EF2243CAD5000968735 /* LearnOpenGLES--绘制图形Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73C14F0A243CAD5000968735 /* Build configuration list for PBXNativeTarget "LearnOpenGLES--绘制图形Tests" */;
+			buildPhases = (
+				73C14EEF243CAD5000968735 /* Sources */,
+				73C14EF0243CAD5000968735 /* Frameworks */,
+				73C14EF1243CAD5000968735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73C14EF5243CAD5000968735 /* PBXTargetDependency */,
+			);
+			name = "LearnOpenGLES--绘制图形Tests";
+			productName = "LearnOpenGLES--绘制图形Tests";
+			productReference = 73C14EF3243CAD5000968735 /* LearnOpenGLES--绘制图形Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73C14EFD243CAD5000968735 /* LearnOpenGLES--绘制图形UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73C14F0D243CAD5000968735 /* Build configuration list for PBXNativeTarget "LearnOpenGLES--绘制图形UITests" */;
+			buildPhases = (
+				73C14EFA243CAD5000968735 /* Sources */,
+				73C14EFB243CAD5000968735 /* Frameworks */,
+				73C14EFC243CAD5000968735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73C14F00243CAD5000968735 /* PBXTargetDependency */,
+			);
+			name = "LearnOpenGLES--绘制图形UITests";
+			productName = "LearnOpenGLES--绘制图形UITests";
+			productReference = 73C14EFE243CAD5000968735 /* LearnOpenGLES--绘制图形UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73C14ED0243CAD4D00968735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "潘伟建";
+				TargetAttributes = {
+					73C14ED7243CAD4D00968735 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					73C14EF2243CAD5000968735 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 73C14ED7243CAD4D00968735;
+					};
+					73C14EFD243CAD5000968735 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 73C14ED7243CAD4D00968735;
+					};
+				};
+			};
+			buildConfigurationList = 73C14ED3243CAD4D00968735 /* Build configuration list for PBXProject "LearnOpenGLES--绘制图形" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73C14ECF243CAD4D00968735;
+			productRefGroup = 73C14ED9243CAD4D00968735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73C14ED7243CAD4D00968735 /* LearnOpenGLES--绘制图形 */,
+				73C14EF2243CAD5000968735 /* LearnOpenGLES--绘制图形Tests */,
+				73C14EFD243CAD5000968735 /* LearnOpenGLES--绘制图形UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73C14ED6243CAD4D00968735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C14EEB243CAD4F00968735 /* LaunchScreen.storyboard in Resources */,
+				73C14EE8243CAD4F00968735 /* Assets.xcassets in Resources */,
+				73C14F17243CB17600968735 /* TrangleFragment.glsl in Resources */,
+				73C14F16243CB17300968735 /* TrangleVertext.glsl in Resources */,
+				73C14EE6243CAD4D00968735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C14EF1243CAD5000968735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C14EFC243CAD5000968735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73C14ED4243CAD4D00968735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C14EE3243CAD4D00968735 /* ViewController.m in Sources */,
+				73C14EDD243CAD4D00968735 /* AppDelegate.m in Sources */,
+				73C14EEE243CAD4F00968735 /* main.m in Sources */,
+				73C14F13243CAD7200968735 /* PJLinkHelper.m in Sources */,
+				73C14EE0243CAD4D00968735 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C14EEF243CAD5000968735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C14EF8243CAD5000968735 /* LearnOpenGLES______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C14EFA243CAD5000968735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C14F03243CAD5000968735 /* LearnOpenGLES______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73C14EF5243CAD5000968735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73C14ED7243CAD4D00968735 /* LearnOpenGLES--绘制图形 */;
+			targetProxy = 73C14EF4243CAD5000968735 /* PBXContainerItemProxy */;
+		};
+		73C14F00243CAD5000968735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73C14ED7243CAD4D00968735 /* LearnOpenGLES--绘制图形 */;
+			targetProxy = 73C14EFF243CAD5000968735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73C14EE4243CAD4D00968735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C14EE5243CAD4D00968735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73C14EE9243CAD4F00968735 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C14EEA243CAD4F00968735 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73C14F05243CAD5000968735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		73C14F06243CAD5000968735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73C14F08243CAD5000968735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "LearnOpenGLES--绘制图形/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwj.LearnOpenGLES------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73C14F09243CAD5000968735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "LearnOpenGLES--绘制图形/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwj.LearnOpenGLES------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73C14F0B243CAD5000968735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "LearnOpenGLES--绘制图形Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwj.LearnOpenGLES------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnOpenGLES--绘制图形.app/LearnOpenGLES--绘制图形";
+			};
+			name = Debug;
+		};
+		73C14F0C243CAD5000968735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "LearnOpenGLES--绘制图形Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwj.LearnOpenGLES------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnOpenGLES--绘制图形.app/LearnOpenGLES--绘制图形";
+			};
+			name = Release;
+		};
+		73C14F0E243CAD5000968735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "LearnOpenGLES--绘制图形UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwj.LearnOpenGLES------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LearnOpenGLES--绘制图形";
+			};
+			name = Debug;
+		};
+		73C14F0F243CAD5000968735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "LearnOpenGLES--绘制图形UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwj.LearnOpenGLES------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LearnOpenGLES--绘制图形";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73C14ED3243CAD4D00968735 /* Build configuration list for PBXProject "LearnOpenGLES--绘制图形" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C14F05243CAD5000968735 /* Debug */,
+				73C14F06243CAD5000968735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73C14F07243CAD5000968735 /* Build configuration list for PBXNativeTarget "LearnOpenGLES--绘制图形" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C14F08243CAD5000968735 /* Debug */,
+				73C14F09243CAD5000968735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73C14F0A243CAD5000968735 /* Build configuration list for PBXNativeTarget "LearnOpenGLES--绘制图形Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C14F0B243CAD5000968735 /* Debug */,
+				73C14F0C243CAD5000968735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73C14F0D243CAD5000968735 /* Build configuration list for PBXNativeTarget "LearnOpenGLES--绘制图形UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C14F0E243CAD5000968735 /* Debug */,
+				73C14F0F243CAD5000968735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73C14ED0243CAD4D00968735 /* Project object */;
+}

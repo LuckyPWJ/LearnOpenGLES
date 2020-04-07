@@ -55,10 +55,10 @@
     GLfloat fhScale = -hScale;
     
     GLfloat vertexs[] = {
-        wScale,hScale,0.0f,1.0f,1.0f,
-        wScale,fhScale,0.0f,1.0f,0.0f,
-        -wScale,hScale,0.0f,0.0f,1.0f,
-        -wScale,fhScale,0.0f,0.0f,0.0f
+        wScale,hScale,0.0f,   1.0f,1.0f,
+        wScale,fhScale,0.0f,  1.0f,0.0f,
+        -wScale,hScale,0.0f,  0.0f,1.0f,
+        -wScale,fhScale,0.0f, 0.0f,0.0f
     };
     
     GLint indexs[] = {
