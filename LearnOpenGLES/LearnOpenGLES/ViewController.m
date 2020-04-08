@@ -86,6 +86,17 @@
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D,textureId);
     
+    GLfloat s = sin(60.0f);
+    GLfloat c = cos(60.0f);
+    
+    GLfloat zRoation[] = {
+        c,s,0,0,
+        -s,c,0,0,
+        0,0,1.0f,0,
+        0,0,0,1.0f
+    };
+    glUniformMatrix4fv(glGetUniformLocation(_program, "roateMatrix"), 1, GL_FALSE, (GLfloat *)&zRoation);
+    
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
 
