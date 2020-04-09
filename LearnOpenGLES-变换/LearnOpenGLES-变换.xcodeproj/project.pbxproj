@@ -151,6 +151,9 @@
 		73C15224243E3EE300968735 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 73C151E4243E3EE300968735 /* wrap.inl */; };
 		73C15225243E3EE300968735 /* projection.inl in Resources */ = {isa = PBXBuildFile; fileRef = 73C151E7243E3EE300968735 /* projection.inl */; };
 		73C15228243E424900968735 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C15227243E424900968735 /* GLKit.framework */; };
+		73C1522B243EF44700968735 /* PJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C1522A243EF44700968735 /* PJUtil.m */; };
+		73C1522D243EFF0000968735 /* 木箱.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C1522C243EFEFF00968735 /* 木箱.png */; };
+		73C1522F243F027B00968735 /* smile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73C1522E243F027A00968735 /* smile.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -573,6 +576,10 @@
 		73C151E7243E3EE300968735 /* projection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projection.inl; sourceTree = "<group>"; };
 		73C151E8243E3EE300968735 /* type_aligned.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
 		73C15227243E424900968735 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		73C15229243EF44700968735 /* PJUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJUtil.h; sourceTree = "<group>"; };
+		73C1522A243EF44700968735 /* PJUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJUtil.m; sourceTree = "<group>"; };
+		73C1522C243EFEFF00968735 /* 木箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "木箱.png"; sourceTree = "<group>"; };
+		73C1522E243F027A00968735 /* smile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -633,6 +640,8 @@
 				73C14F28243DC89800968735 /* SceneDelegate.m */,
 				73C14F2A243DC89800968735 /* ViewController.h */,
 				73C14F2B243DC89800968735 /* ViewController.mm */,
+				73C1522E243F027A00968735 /* smile.jpg */,
+				73C1522C243EFEFF00968735 /* 木箱.png */,
 				73C14F5D243DCAC500968735 /* TransformVertex.glsl */,
 				73C14F5E243DCADF00968735 /* TransformFragment.glsl */,
 				73C14F2D243DC89900968735 /* Main.storyboard */,
@@ -667,6 +676,8 @@
 			children = (
 				73C14F5A243DC90D00968735 /* PJLinkHelper.h */,
 				73C14F5B243DC90D00968735 /* PJLinkHelper.m */,
+				73C15229243EF44700968735 /* PJUtil.h */,
+				73C1522A243EF44700968735 /* PJUtil.m */,
 			);
 			name = Util;
 			path = ../../LearnOpenGLES/LearnOpenGLES/Util;
@@ -1239,6 +1250,7 @@
 				73C15112243E3D5A00968735 /* type_mat2x3.inl in Resources */,
 				73C150ED243E3D5A00968735 /* vector_relational.inl in Resources */,
 				73C150F7243E3D5A00968735 /* vector_integer.inl in Resources */,
+				73C1522D243EFF0000968735 /* 木箱.png in Resources */,
 				73C1511B243E3D5A00968735 /* type_mat3x2.inl in Resources */,
 				73C151FF243E3EE300968735 /* extended_min_max.inl in Resources */,
 				73C14F31243DC89B00968735 /* Assets.xcassets in Resources */,
@@ -1276,6 +1288,7 @@
 				73C151FB243E3EE300968735 /* fast_trigonometry.inl in Resources */,
 				73C15126243E3D5A00968735 /* integer.inl in Resources */,
 				73C1511F243E3D5A00968735 /* packing.inl in Resources */,
+				73C1522F243F027B00968735 /* smile.jpg in Resources */,
 				73C150F1243E3D5A00968735 /* matrix_projection.inl in Resources */,
 				73C150FD243E3D5A00968735 /* func_packing.inl in Resources */,
 				73C150EC243E3D5A00968735 /* scalar_common.inl in Resources */,
@@ -1382,6 +1395,7 @@
 				73C14F37243DC89B00968735 /* main.m in Sources */,
 				73C14F5C243DC90D00968735 /* PJLinkHelper.m in Sources */,
 				73C14F29243DC89800968735 /* SceneDelegate.m in Sources */,
+				73C1522B243EF44700968735 /* PJUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

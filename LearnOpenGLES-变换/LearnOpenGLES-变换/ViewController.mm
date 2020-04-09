@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PJLinkHelper.h"
+#import "PJUtil.h"
 #import "glm.hpp"
 #include "matrix_transform.hpp"
 #include "type_ptr.hpp"
@@ -20,9 +21,12 @@
     NSTimer *_timer;
     BOOL xOn;
     BOOL yOn;
+    BOOL zOn;
     float _xdegree;
     float _ydegree;
+    float _zdegree;
     GLKView *_glkView;
+    GLuint _textureId;
 }
 @end
 
@@ -47,6 +51,9 @@
     
     GLuint program = [PJLinkHelper loadWithVShader:vShader fShader:fShader];
     _program = program;
+    
+    UIImage * image = [UIImage imageNamed:@"smile.jpg"];
+    _textureId = [PJUtil getTextureIdFromImage:image];
 }
 
 -(void)setUpButton
@@ -66,6 +73,14 @@
     [yBtn addTarget:self action:@selector(yAction) forControlEvents:UIControlEventTouchUpInside];
     yBtn.titleLabel.font = [UIFont systemFontOfSize:10];
     [self.view addSubview:yBtn];
+    
+    UIButton * zBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    zBtn.frame = CGRectMake(200, 40, 40, 30);
+    [zBtn setTitle:@"Z旋转" forState:UIControlStateNormal];
+    [zBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [zBtn addTarget:self action:@selector(zAction) forControlEvents:UIControlEventTouchUpInside];
+    zBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+    [self.view addSubview:zBtn];
 }
 
 
@@ -86,11 +101,19 @@
     yOn = !yOn;
 }
 
+-(void)zAction
+{
+    if (!_timer) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:0.05f target:self selector:@selector(timerRes) userInfo:nil repeats:YES];
+    }
+    zOn = !zOn;
+}
+
 -(void)timerRes
 {
     _xdegree += xOn * 5;
     _ydegree += yOn * 5;
-    
+    _zdegree += zOn * 5;
     [_glkView setNeedsDisplay];
 }
 
@@ -102,11 +125,11 @@
     glUseProgram(_program);
     
     GLfloat vertexs[] = {
-        -0.5,0.5,0,     1.0f,0.0f,1.0f,      //左上
-        -0.5,-0.5,0,    0.0f,1.0f,0.0f,      //左下
-        0.5,0.5,0,      0.0f,0.0f,1.0f,      //右上
-        0.5,-0.5,0,     1.0f,1.0f,1.0f,      //右下
-        0,0,1.0f,       1.0f,0.0f,0.5f,      //中间
+        -0.5,0.5,0,     1.0f,0.0f,1.0f,   0,1.0f,   //左上
+        -0.5,-0.5,0,    0.0f,1.0f,0.0f,   0,0,   //左下
+        0.5,0.5,0,      0.0f,0.0f,1.0f,   1.0f,1.0f,   //右上
+        0.5,-0.5,0,     1.0f,1.0f,1.0f,   1.0f,0,   //右下
+        0,0,0.5f,       1.0f,0.0f,0.5f,   0.5f,0.5f,   //中间
     };
     
     GLint indexs[] = {
@@ -127,14 +150,21 @@
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexs), indexs, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), NULL);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), NULL);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (void *)(3 * sizeof(GLfloat)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (void *)(3 * sizeof(GLfloat)));
     glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (void *)(6 * sizeof(GLfloat)));
+    glEnableVertexAttribArray(2);
+    
+    glBindTexture(GL_TEXTURE_2D, _textureId);
+    glActiveTexture(GL_TEXTURE0);
     
     glm::mat4 model = glm::mat4(1.0);
     model = glm::rotate(model, glm::radians(_xdegree), glm::vec3(1.0,0.0f,0.0f));
     model = glm::rotate(model, glm::radians(_ydegree), glm::vec3(0.0,1.0f,0.0f));
+    model = glm::rotate(model, glm::radians(_zdegree), glm::vec3(0.0,0.0f,1.0f));
+
     GLint modelLocation = glGetUniformLocation(_program, "modelViewMatrix");
     glUniformMatrix4fv(modelLocation, 1, GL_FALSE, glm::value_ptr(model));
     
