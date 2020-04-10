@@ -32,11 +32,10 @@ void main(){
     float specualStrength = 0.5f;
     //计算观察者到正方体向量
     vec3 viewDir = normalize(viewPos - a_fragPos);
-    //计算反射镜面光和法线向量的点积
+    //计算镜面反射光向量
     vec3 reflectDir = reflect(-lightDir,normal);
     float spec = pow(max(dot(viewDir,reflectDir),0.0),32.0);
     vec3 specualColor = specualStrength * spec * lightColor;
 
     fragColor = vec4((ambientColor + diffuseColor + specualColor) * objectColor,1.0f);
-    
 }
