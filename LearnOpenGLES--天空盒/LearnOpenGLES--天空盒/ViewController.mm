@@ -56,7 +56,7 @@
     [self initData];
     
     [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        _degree += 0.05;
+        self->_degree += 0.05;
         [view setNeedsDisplay];
     }];
 }
@@ -77,8 +77,6 @@
         CGColorSpaceRef colorSpaceRef = CGImageGetColorSpace(imageRef);
         void * imageData = malloc(width * height * 4);
         CGContextRef context = CGBitmapContextCreate(imageData, width, height, 8, width * 4, colorSpaceRef, kCGBitmapByteOrder32Big | kCGImageAlphaNoneSkipLast);
-//        CGContextTranslateCTM(context, 0, height);
-//        CGContextScaleCTM(context, 1.0f, -1.0f);
         CGColorSpaceRelease(colorSpaceRef);
         CGContextClearRect(context, rect);
         CGContextDrawImage(context, rect, imageRef);
@@ -100,7 +98,6 @@
 -(void)initData
 {
     _degree = 0;
-//    glEnable(GL_CULL_FACE);
     glEnable(GL_DEPTH_TEST);
     GLfloat cubeVertices[] = {
         // positions          // texture Coords
@@ -183,7 +180,7 @@
           5.0f, -5.0f, -5.0f,
           5.0f,  5.0f, -5.0f,
           -5.0f,  5.0f, -5.0f,  //后
-//
+
         -5.0f, -5.0f,  5.0f,
          -5.0f,  5.0f,  5.0f,
          5.0f,  5.0f,  5.0f,
@@ -246,7 +243,7 @@
     glm::mat4 viewMatrix  = glm::mat4(1.0f);
     glm::mat4 projection = glm::mat4(1.0f);
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::scale(model, glm::vec3(0.5f,0.5f,0.5f));
+    model = glm::scale(model, glm::vec3(0.3f,0.3f,0.3f));
     float radius = 5.0f;
     float camX = sin(_degree) * radius;
     float camZ = cos(_degree) * radius;
@@ -256,17 +253,14 @@
     glUniformMatrix4fv(glGetUniformLocation(_cubeProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glUniformMatrix4fv(glGetUniformLocation(_cubeProgram, "view"), 1, GL_FALSE, glm::value_ptr(viewMatrix));
     glUniformMatrix4fv(glGetUniformLocation(_cubeProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-    
+    //绘制立方体
     glBindVertexArray(_cubeVaoId);
-//    glUniform1i(glGetUniformLocation(_cubeProgram, "ourTexture"), 0);
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, _cuboTextureId);
     glDrawArrays(GL_TRIANGLES, 0, 36);
     glBindVertexArray(0);
-    
-//     glDepthFunc(GL_LEQUAL);
+    //绘制天空盒
     glUseProgram(_skyProgram);
-//    viewMatrix = glm::mat4(glm::mat3(viewMatrix));
     glUniformMatrix4fv(glGetUniformLocation(_skyProgram, "view"), 1, GL_FALSE, glm::value_ptr(viewMatrix));
     glUniformMatrix4fv(glGetUniformLocation(_skyProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     glBindVertexArray(_vaoId);
@@ -275,7 +269,6 @@
     glBindTexture(GL_TEXTURE_CUBE_MAP, _textureId);
     glDrawArrays(GL_TRIANGLES, 0, 36);
     glBindVertexArray(0);
-//      glDepthFunc(GL_LESS);
 }
 
 @end
