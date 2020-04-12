@@ -20,7 +20,8 @@
     
     CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
     void * imageData = malloc(width * height * 4);
-    CGContextRef context = CGBitmapContextCreate(imageData, width, height, 8, width * 4, colorSpaceRef, kCGBitmapByteOrder32Big | kCGImageAlphaPremultipliedFirst);
+    CGContextRef context = CGBitmapContextCreate(imageData, width, height, 8, width * 4, colorSpaceRef, CGImageGetAlphaInfo(imageRef));
+    
     CGContextTranslateCTM(context, 0, height);
     CGContextScaleCTM(context, 1.0f, -1.0f);
     CGColorSpaceRelease(colorSpaceRef);

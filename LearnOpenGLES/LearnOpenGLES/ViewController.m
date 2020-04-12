@@ -82,7 +82,6 @@
     UIImage * image  = [UIImage imageNamed:@"木箱"];
     GLuint textureId = [self getTextureId:image];
     
-    glUniform1f(glGetUniformLocation(_program, "texture0"), 0);
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D,textureId);
     
