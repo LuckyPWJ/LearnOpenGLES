@@ -72,15 +72,13 @@ GLfloat SceneScalarSlowLowPassFilter(NSTimeInterval elapsed,
     [self initData];
     
     [NSTimer scheduledTimerWithTimeInterval:0.05f repeats:YES block:^(NSTimer * _Nonnull timer) {
-               
-        
         [view setNeedsDisplay];
     }];
 }
 
 -(void)updateCar
 {
-    glm::vec3 travelDistance = _velocity * 0.05f;
+    glm::vec3 travelDistance = _velocity * 0.1f;
     _nextPosition = _position + travelDistance;
     
     [self bounceOffWallsWithBoundingBox:_boundingBox];
@@ -167,6 +165,7 @@ GLfloat SceneScalarSlowLowPassFilter(NSTimeInterval elapsed,
     glUseProgram(_carProgram);
     glBindVertexArray(_carVao);
     model = glm::translate(model, _position);
+    //_yawRadians表示的是角度，glm::roate需要传入的是矩阵，所以先转成弧度
     model = glm::rotate(model,glm::radians(GLKMathRadiansToDegrees(_yawRadians)), glm::vec3(0.0f,1.0f,.0f));
     glUniformMatrix4fv(glGetUniformLocation(_carProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glUniformMatrix4fv(glGetUniformLocation(_carProgram, "view"), 1, GL_FALSE, glm::value_ptr(views));
@@ -175,9 +174,9 @@ GLfloat SceneScalarSlowLowPassFilter(NSTimeInterval elapsed,
 
     glUniform3fv(glGetUniformLocation(_carProgram, "objectColor"), 1, glm::value_ptr(glm::vec3(0.5f,0.0f,0.0f)));
 
-    glDrawArrays(GL_TRIANGLES, 0, 1164);
+    glDrawArrays(GL_TRIANGLES, 0, bumperCarNumVerts);
 }
-
+//更新场景坐标，获取X轴min,max，Y轴min，max
 - (void)updateAlignedBoundingBoxForVertices:(float *)verts
    count:(unsigned int)aCount;
 {
@@ -200,14 +199,13 @@ GLfloat SceneScalarSlowLowPassFilter(NSTimeInterval elapsed,
       result.max.y = MAX(result.max.y, positions[i].y);
       result.max.z = MAX(result.max.z, positions[i].z);
    }
-   
    _boundingBox = result;
 }
 
 //检测car和墙的碰撞
 - (void)bounceOffWallsWithBoundingBox:(SceneAxisAllignedBoundingBox)rinkBoundingBox
 {
-    float radius =0.45;
+    float radius = 0.45;
     if((_boundingBox.min.x + radius) > _nextPosition.x)
     {
         //下一个点超过了x最小的边界
