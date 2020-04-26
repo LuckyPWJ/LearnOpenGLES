@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7353D1C3244476E500594D48 /* PJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353D1BF244476E500594D48 /* PJUtil.m */; };
+		7353D1C4244476E500594D48 /* PJLinkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353D1C2244476E500594D48 /* PJLinkHelper.m */; };
 		73C14F26243DC89800968735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F25243DC89800968735 /* AppDelegate.m */; };
 		73C14F29243DC89800968735 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F28243DC89800968735 /* SceneDelegate.m */; };
 		73C14F2C243DC89800968735 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F2B243DC89800968735 /* ViewController.mm */; };
@@ -16,7 +18,6 @@
 		73C14F37243DC89B00968735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F36243DC89B00968735 /* main.m */; };
 		73C14F41243DC89D00968735 /* LearnOpenGLES___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F40243DC89D00968735 /* LearnOpenGLES___Tests.m */; };
 		73C14F4C243DC89D00968735 /* LearnOpenGLES___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F4B243DC89D00968735 /* LearnOpenGLES___UITests.m */; };
-		73C14F5C243DC90D00968735 /* PJLinkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C14F5B243DC90D00968735 /* PJLinkHelper.m */; };
 		73C14F5F243DCAF200968735 /* TransformFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 73C14F5E243DCADF00968735 /* TransformFragment.glsl */; };
 		73C14F60243DCB0000968735 /* TransformVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 73C14F5D243DCAC500968735 /* TransformVertex.glsl */; };
 		73C150E4243E3D5A00968735 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 73C14F6C243E3D5700968735 /* CMakeLists.txt */; };
@@ -151,8 +152,6 @@
 		73C15224243E3EE300968735 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 73C151E4243E3EE300968735 /* wrap.inl */; };
 		73C15225243E3EE300968735 /* projection.inl in Resources */ = {isa = PBXBuildFile; fileRef = 73C151E7243E3EE300968735 /* projection.inl */; };
 		73C15228243E424900968735 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C15227243E424900968735 /* GLKit.framework */; };
-		73C1522B243EF44700968735 /* PJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C1522A243EF44700968735 /* PJUtil.m */; };
-		73C1522D243EFF0000968735 /* 木箱.png in Resources */ = {isa = PBXBuildFile; fileRef = 73C1522C243EFEFF00968735 /* 木箱.png */; };
 		73C1522F243F027B00968735 /* smile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73C1522E243F027A00968735 /* smile.jpg */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +173,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7353D1BF244476E500594D48 /* PJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJUtil.m; sourceTree = "<group>"; };
+		7353D1C0244476E500594D48 /* PJLinkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLinkHelper.h; sourceTree = "<group>"; };
+		7353D1C1244476E500594D48 /* PJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJUtil.h; sourceTree = "<group>"; };
+		7353D1C2244476E500594D48 /* PJLinkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJLinkHelper.m; sourceTree = "<group>"; };
 		73C14F21243DC89800968735 /* LearnOpenGLES-变换.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearnOpenGLES-变换.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C14F24243DC89800968735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73C14F25243DC89800968735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -192,8 +195,6 @@
 		73C14F47243DC89D00968735 /* LearnOpenGLES-变换UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LearnOpenGLES-变换UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C14F4B243DC89D00968735 /* LearnOpenGLES___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LearnOpenGLES___UITests.m"; sourceTree = "<group>"; };
 		73C14F4D243DC89D00968735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73C14F5A243DC90D00968735 /* PJLinkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLinkHelper.h; sourceTree = "<group>"; };
-		73C14F5B243DC90D00968735 /* PJLinkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJLinkHelper.m; sourceTree = "<group>"; };
 		73C14F5D243DCAC500968735 /* TransformVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TransformVertex.glsl; sourceTree = "<group>"; };
 		73C14F5E243DCADF00968735 /* TransformFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TransformFragment.glsl; sourceTree = "<group>"; };
 		73C14F64243E3D5700968735 /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
@@ -576,9 +577,6 @@
 		73C151E7243E3EE300968735 /* projection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projection.inl; sourceTree = "<group>"; };
 		73C151E8243E3EE300968735 /* type_aligned.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
 		73C15227243E424900968735 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		73C15229243EF44700968735 /* PJUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJUtil.h; sourceTree = "<group>"; };
-		73C1522A243EF44700968735 /* PJUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJUtil.m; sourceTree = "<group>"; };
-		73C1522C243EFEFF00968735 /* 木箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "木箱.png"; sourceTree = "<group>"; };
 		73C1522E243F027A00968735 /* smile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -608,6 +606,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7353D1BE244476E500594D48 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7353D1BF244476E500594D48 /* PJUtil.m */,
+				7353D1C0244476E500594D48 /* PJLinkHelper.h */,
+				7353D1C1244476E500594D48 /* PJUtil.h */,
+				7353D1C2244476E500594D48 /* PJLinkHelper.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		73C14F18243DC89800968735 = {
 			isa = PBXGroup;
 			children = (
@@ -632,8 +641,8 @@
 		73C14F23243DC89800968735 /* LearnOpenGLES-变换 */ = {
 			isa = PBXGroup;
 			children = (
+				7353D1BE244476E500594D48 /* Util */,
 				73C14F62243E3D5700968735 /* GLM2 */,
-				73C14F59243DC90D00968735 /* Util */,
 				73C14F24243DC89800968735 /* AppDelegate.h */,
 				73C14F25243DC89800968735 /* AppDelegate.m */,
 				73C14F27243DC89800968735 /* SceneDelegate.h */,
@@ -641,7 +650,6 @@
 				73C14F2A243DC89800968735 /* ViewController.h */,
 				73C14F2B243DC89800968735 /* ViewController.mm */,
 				73C1522E243F027A00968735 /* smile.jpg */,
-				73C1522C243EFEFF00968735 /* 木箱.png */,
 				73C14F5D243DCAC500968735 /* TransformVertex.glsl */,
 				73C14F5E243DCADF00968735 /* TransformFragment.glsl */,
 				73C14F2D243DC89900968735 /* Main.storyboard */,
@@ -669,18 +677,6 @@
 				73C14F4D243DC89D00968735 /* Info.plist */,
 			);
 			path = "LearnOpenGLES-变换UITests";
-			sourceTree = "<group>";
-		};
-		73C14F59243DC90D00968735 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				73C14F5A243DC90D00968735 /* PJLinkHelper.h */,
-				73C14F5B243DC90D00968735 /* PJLinkHelper.m */,
-				73C15229243EF44700968735 /* PJUtil.h */,
-				73C1522A243EF44700968735 /* PJUtil.m */,
-			);
-			name = Util;
-			path = ../../LearnOpenGLES/LearnOpenGLES/Util;
 			sourceTree = "<group>";
 		};
 		73C14F62243E3D5700968735 /* GLM2 */ = {
@@ -1250,7 +1246,6 @@
 				73C15112243E3D5A00968735 /* type_mat2x3.inl in Resources */,
 				73C150ED243E3D5A00968735 /* vector_relational.inl in Resources */,
 				73C150F7243E3D5A00968735 /* vector_integer.inl in Resources */,
-				73C1522D243EFF0000968735 /* 木箱.png in Resources */,
 				73C1511B243E3D5A00968735 /* type_mat3x2.inl in Resources */,
 				73C151FF243E3EE300968735 /* extended_min_max.inl in Resources */,
 				73C14F31243DC89B00968735 /* Assets.xcassets in Resources */,
@@ -1393,9 +1388,9 @@
 				73C14F2C243DC89800968735 /* ViewController.mm in Sources */,
 				73C14F26243DC89800968735 /* AppDelegate.m in Sources */,
 				73C14F37243DC89B00968735 /* main.m in Sources */,
-				73C14F5C243DC90D00968735 /* PJLinkHelper.m in Sources */,
+				7353D1C4244476E500594D48 /* PJLinkHelper.m in Sources */,
 				73C14F29243DC89800968735 /* SceneDelegate.m in Sources */,
-				73C1522B243EF44700968735 /* PJUtil.m in Sources */,
+				7353D1C3244476E500594D48 /* PJUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
