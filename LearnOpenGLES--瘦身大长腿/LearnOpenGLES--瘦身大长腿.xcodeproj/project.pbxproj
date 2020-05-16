@@ -153,6 +153,10 @@
 		734F32C5245D1D7800E5A5B0 /* t01c74358303225e0ee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 734F32C4245D1D7800E5A5B0 /* t01c74358303225e0ee.jpg */; };
 		734F32C8245D1E8F00E5A5B0 /* vShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 734F32C6245D1E7200E5A5B0 /* vShader.glsl */; };
 		734F32CA245FB1C400E5A5B0 /* fShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 734F32C7245D1E8300E5A5B0 /* fShader.glsl */; };
+		734F32CD2464114C00E5A5B0 /* EAGLHeadShapeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 734F32CC2464114C00E5A5B0 /* EAGLHeadShapeView.mm */; };
+		734F32D02464363100E5A5B0 /* EAGLHeaderVShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 734F32CE2464360B00E5A5B0 /* EAGLHeaderVShader.glsl */; };
+		734F32D12464363400E5A5B0 /* EAGLHeaderFShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 734F32CF2464362800E5A5B0 /* EAGLHeaderFShader.glsl */; };
+		734F32D324650A3900E5A5B0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 734F32D224650A3900E5A5B0 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -579,6 +583,11 @@
 		734F32C4245D1D7800E5A5B0 /* t01c74358303225e0ee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t01c74358303225e0ee.jpg; sourceTree = "<group>"; };
 		734F32C6245D1E7200E5A5B0 /* vShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vShader.glsl; sourceTree = "<group>"; };
 		734F32C7245D1E8300E5A5B0 /* fShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fShader.glsl; sourceTree = "<group>"; };
+		734F32CB2464114C00E5A5B0 /* EAGLHeadShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLHeadShapeView.h; sourceTree = "<group>"; };
+		734F32CC2464114C00E5A5B0 /* EAGLHeadShapeView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLHeadShapeView.mm; sourceTree = "<group>"; };
+		734F32CE2464360B00E5A5B0 /* EAGLHeaderVShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = EAGLHeaderVShader.glsl; sourceTree = "<group>"; };
+		734F32CF2464362800E5A5B0 /* EAGLHeaderFShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = EAGLHeaderFShader.glsl; sourceTree = "<group>"; };
+		734F32D224650A3900E5A5B0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -639,9 +648,14 @@
 				734F3082245C211F00E5A5B0 /* ViewController.m */,
 				734F32C1245C21E800E5A5B0 /* EAGLView.h */,
 				734F32C2245C21E800E5A5B0 /* EAGLView.m */,
+				734F32CB2464114C00E5A5B0 /* EAGLHeadShapeView.h */,
+				734F32CC2464114C00E5A5B0 /* EAGLHeadShapeView.mm */,
+				734F32CE2464360B00E5A5B0 /* EAGLHeaderVShader.glsl */,
+				734F32CF2464362800E5A5B0 /* EAGLHeaderFShader.glsl */,
 				734F32C6245D1E7200E5A5B0 /* vShader.glsl */,
 				734F32C7245D1E8300E5A5B0 /* fShader.glsl */,
 				734F32C4245D1D7800E5A5B0 /* t01c74358303225e0ee.jpg */,
+				734F32D224650A3900E5A5B0 /* test.jpg */,
 				734F3084245C211F00E5A5B0 /* Main.storyboard */,
 				734F3087245C212400E5A5B0 /* Assets.xcassets */,
 				734F3089245C212400E5A5B0 /* LaunchScreen.storyboard */,
@@ -1236,6 +1250,7 @@
 				734F32B8245C21BA00E5A5B0 /* norm.inl in Resources */,
 				734F3255245C21BA00E5A5B0 /* func_vector_relational_simd.inl in Resources */,
 				734F32AD245C21BA00E5A5B0 /* rotate_normalized_axis.inl in Resources */,
+				734F32D12464363400E5A5B0 /* EAGLHeaderFShader.glsl in Resources */,
 				734F3261245C21BA00E5A5B0 /* func_trigonometric_simd.inl in Resources */,
 				734F329F245C21BA00E5A5B0 /* vector_angle.inl in Resources */,
 				734F32AA245C21BA00E5A5B0 /* matrix_factorisation.inl in Resources */,
@@ -1302,6 +1317,7 @@
 				734F32B2245C21BA00E5A5B0 /* perpendicular.inl in Resources */,
 				734F32BF245C21BA00E5A5B0 /* wrap.inl in Resources */,
 				734F323E245C21BA00E5A5B0 /* matrix_clip_space.inl in Resources */,
+				734F32D02464363100E5A5B0 /* EAGLHeaderVShader.glsl in Resources */,
 				734F32A4245C21BA00E5A5B0 /* hash.inl in Resources */,
 				734F32A9245C21BA00E5A5B0 /* std_based_type.inl in Resources */,
 				734F32B5245C21BA00E5A5B0 /* easing.inl in Resources */,
@@ -1347,6 +1363,7 @@
 				734F323F245C21BA00E5A5B0 /* scalar_integer.inl in Resources */,
 				734F3288245C21BA00E5A5B0 /* matrix_transform_2d.inl in Resources */,
 				734F324D245C21BA00E5A5B0 /* scalar_relational.inl in Resources */,
+				734F32D324650A3900E5A5B0 /* test.jpg in Resources */,
 				734F3267245C21BA00E5A5B0 /* type_mat2x3.inl in Resources */,
 				734F329B245C21BA00E5A5B0 /* float_notmalize.inl in Resources */,
 				734F3257245C21BA00E5A5B0 /* func_integer.inl in Resources */,
@@ -1380,6 +1397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				734F30B5245C219F00E5A5B0 /* PJUtil.m in Sources */,
+				734F32CD2464114C00E5A5B0 /* EAGLHeadShapeView.mm in Sources */,
 				734F32C3245C21E800E5A5B0 /* EAGLView.m in Sources */,
 				734F3083245C211F00E5A5B0 /* ViewController.m in Sources */,
 				734F307D245C211F00E5A5B0 /* AppDelegate.m in Sources */,

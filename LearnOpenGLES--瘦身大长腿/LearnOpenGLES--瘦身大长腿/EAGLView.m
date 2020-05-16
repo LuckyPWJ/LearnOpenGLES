@@ -95,14 +95,14 @@
     CGFloat x1 = -0.3f;
     CGFloat x2 = 0.3f;
     GLfloat vFboVertices[] = {
-        -1.0f, -1.0f,  0.0f,   0.0f, 0.0f,
-        -1.0f, 1.0f,   0.0f,   0.0f, 1.0f,
-        (x1 - _scale)/(1.0f + _scale), -1.0f,  0.0f,   0.3f, 0.0f,
-        (x1 - _scale)/(1.0f + _scale), 1.0f,   0.0f,   0.3f, 1.0f,
-        (x2 + _scale)/(1.0f + _scale), -1.0f,   0.0f,   0.6f, 0.0f,
-        (x2 + _scale)/(1.0f + _scale), 1.0f,    0.0f,   0.6f, 1.0f,
-        1.0f, -1.0f,   0.0f,   1.0f, 0.0f,
-        1.0f, 1.0f,    0.0f,   1.0f, 1.0f,
+        -1.0f, -1.0f,  0.0f,                          0.0f, 0.0f,
+        -1.0f, 1.0f,   0.0f,                          0.0f, 1.0f,
+        (x1 - _scale)/(1.0f + _scale),-1.0f,0.0f,     0.3f, 0.0f,
+        (x1 - _scale)/(1.0f + _scale),1.0f,0.0f,      0.3f, 1.0f,
+        (x2 + _scale)/(1.0f + _scale),-1.0f,0.0f,     0.6f, 0.0f,
+        (x2 + _scale)/(1.0f + _scale),1.0f,0.0f,      0.6f, 1.0f,
+        1.0f, -1.0f,   0.0f,                          1.0f, 0.0f,
+        1.0f, 1.0f,    0.0f,                          1.0f, 1.0f,
     };
     
     GLuint vbo,vao;
@@ -112,12 +112,13 @@
     
     glGenBuffers(1, &vbo);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    _vbo = vbo;
     glBufferData(GL_ARRAY_BUFFER, sizeof(vFboVertices), vFboVertices, GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(GL_FLOAT) * 5, 0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(GL_FLOAT) * 5, (void *)(3 * sizeof(GL_FLOAT)));
     glEnableVertexAttribArray(1);
+    _vbo = vbo;
+
 }
 
 -(void)setUpFrameBuffer
@@ -140,7 +141,7 @@
     CGFloat width = self.bounds.size.width / 2 * (1 + _scale);
     CGFloat height = self.bounds.size.height / 2;
     CGFloat x = (self.bounds.size.width - width) / 2;
-    glViewport(x,height/2 , width , height );
+    glViewport(x,height/2 , width , height);
     glClearColor(0.8f, 0.6f, 0.3f, 0);
     glClear(GL_COLOR_BUFFER_BIT);
     
@@ -150,7 +151,6 @@
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 8);
     [_context presentRenderbuffer:GL_RENDERBUFFER];
 }
-
 
 -(void)setScaleValue:(float)scaleValue
 {
