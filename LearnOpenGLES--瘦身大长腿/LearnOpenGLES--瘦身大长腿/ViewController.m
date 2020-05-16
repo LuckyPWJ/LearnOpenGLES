@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//     Do any additional setup after loading the view.
+//    1.拉伸收缩变胖变瘦效果
 //    EAGLView * view = [[EAGLView alloc] initWithFrame:self.view.bounds];
 //    [self.view addSubview:view];
 //    _glview = view;
@@ -32,6 +32,7 @@
 //    [self.view addSubview:slider];
 //    [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     
+    //2.大头效果
     EAGLHeadShapeView * shapeView = [[EAGLHeadShapeView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:shapeView];
     _glHeaderView = shapeView;    
